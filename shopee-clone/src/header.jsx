@@ -88,9 +88,7 @@ function Header() {
         </div>
       </Navbar>
       <div className="items-left bg-orange-500">
-        <div className="ml-auto p-2">
-          {itemList}
-        </div>
+        <div className="ml-auto p-2">{itemList}</div>
       </div>
     </header>
   );
