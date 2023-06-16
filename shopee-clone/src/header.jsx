@@ -2,6 +2,7 @@ import "./index.css";
 import { Navbar } from "flowbite-react";
 import Logo from "./logo.jsx";
 const NavbarItems = ["Phone Case", "Lato Lato", "Dress", "Shoes", "Tops"];
+
 let itemList = [];
 for (let i of NavbarItems) {
   itemList.push(
