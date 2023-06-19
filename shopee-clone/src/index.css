@@ -20,3 +20,14 @@ div.gallery img {
 .h1App{
     font-size: larger;
 }
+#hideCheckbox{
+  display: none;
+}
+#hideCheckbox:checked ~ label img {
+  display: none;
+}
+#banner{
+  position: absolute;
+  margin-left: 40%;
+  top: 40%;
+}
