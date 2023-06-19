@@ -53,8 +53,8 @@ function App() {
           <div class="gallery">
             <a target="" href="#">
               <img
-                src={products.link}
-                alt={products.alt}
+                src={product.link}
+                alt={product.alt}
                 width="600"
                 height="600"
               />
