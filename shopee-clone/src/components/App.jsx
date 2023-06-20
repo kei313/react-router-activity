@@ -1,5 +1,5 @@
 import { Carousel } from "flowbite-react";
-import "./index.css";
+import "../assets/styles/index.css";
 import Timer from "./timer.jsx";
 
 function App() {

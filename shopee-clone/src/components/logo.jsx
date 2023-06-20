@@ -1,5 +1,5 @@
-import ShopeeLogo from './assets/images/logo.png'
-import "./index.css"
+import ShopeeLogo from '../assets/images/logo.png'
+import "../assets/styles/index.css";
 
 function Logo() {
     return (
