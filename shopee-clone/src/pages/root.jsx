@@ -3,14 +3,14 @@ import { Navbar } from "flowbite-react";
 import Logo from "../components/logo.jsx";
 import NavbarItem from "../components/NavbarItems";
 import LoginButton from "../components/LoginButton";
-import Index from "./index.jsx";
+import { Outlet } from "react-router";
 
 export default function Root() {
   return (
     <>
       <header>
         <Navbar fluid className="!bg-white">
-          <Navbar.Brand href="https://shopee.ph">
+          <Navbar.Brand href="#">
             <Logo />
             <form>
               <label
@@ -85,7 +85,7 @@ export default function Root() {
         </div>
       </header>
       <div class="content-items">
-        {<Index/>}
+        { <Outlet/>}
       </div>
     </>
   );

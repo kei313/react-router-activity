@@ -8,6 +8,7 @@ import PhoneCase from "./pages/PhoneCase";
 import LatoLato from "./pages/LatoLato";
 import Dress from "./pages/Dress";
 import Login from "./pages/login";
+import Index from "./pages/index";
 
 const router = createBrowserRouter([
   {
@@ -16,27 +17,27 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        errorElement: <ErrorPage />,
-        children: [
-          {
-            path: "PhoneCase",
-            element: <PhoneCase />,
-          },
-          {
-            path: "LatoLato",
-            element: <LatoLato />,
-          },
-          {
-            path: "Dress",
-            element: <Dress />,
-          },
-        ],
+        index: true,
+        element: <Index/>
+      },
+      {
+        path: "/PhoneCase",
+        element: <PhoneCase />,
+      },
+      {
+        path: "/LatoLato",
+        element: <LatoLato />,
+      },
+      {
+        path: "/Dress",
+        element: <Dress />,
       },
     ],
-  },{
+  },
+  {
     path: "Login",
-    element: <Login/>,
-  }
+    element: <Login />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

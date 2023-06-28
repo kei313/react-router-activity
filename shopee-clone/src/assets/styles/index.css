@@ -58,3 +58,11 @@ div.gallery img {
   max-height: 100%;
   object-fit: cover;
 }
+.return-pages{
+  background-color: white;
+  transition-duration: 0.4s;
+}
+.return-pages:hover {
+  background-color: orangered; /* Green */
+  color: white;
+}
