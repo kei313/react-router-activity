@@ -3,6 +3,7 @@ import { Navbar } from "flowbite-react";
 import Logo from "../components/logo.jsx";
 import NavbarItem from "../components/NavbarItems";
 import LoginButton from "../components/LoginButton";
+import Index from "./index.jsx";
 
 export default function Root() {
   return (
@@ -83,7 +84,9 @@ export default function Root() {
           <div className="ml-auto p-2">{<NavbarItem/>}</div>
         </div>
       </header>
-      
+      <div class="content-items">
+        {<Index/>}
+      </div>
     </>
   );
 }
