@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./assets/styles/index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ErrorPage from "./error-page.jsx";
+import ErrorPage from "./pages/error-page.jsx";
 import Root from "./pages/root.jsx";
 import PhoneCase from "./pages/PhoneCase";
 import LatoLato from "./pages/LatoLato";

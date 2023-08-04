@@ -1,42 +1,40 @@
 import { Link } from "react-router-dom";
 
-function NavbarItems() {
+function NavItems() {
   const navItems = [
     {
-      nav: "Phone Case",
-      link: "PhoneCase",
+      nav: "Notifications",
+      link: "Notifications",
     },
     {
-      nav: "Lato Lato",
-      link: "LatoLato",
+      nav: "Cart",
+      link: "Cart",
     },
     {
-      nav: "Dress",
-      link: "Dress",
+      nav: "Sign up",
+      link: "Signup",
     },
     {
-      nav: "Shoes",
-      link: "Shoes",
-    },
-    {
-      nav: "Tops",
-      link: "Tops",
+      nav: "Login",
+      link: "/Login",
     },
   ];
   const itemList = navItems.map((e, index) => {
     return (
-      <a>
-        <Link to={e.link} className="text-black hover:text-white ml-4">
-          {e.nav}
-        </Link>
-      </a>
+      <p className="leading-none pr-2">
+        <button class="text-white bg-gradient-to-br from-orange-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+          <span className="navtitle-md font-semibold text-black">
+              <Link to={e.link} className="text-black hover:text-white ml-4">
+                {e.nav}
+              </Link>
+          </span>
+        </button>
+      </p>
     );
   });
   return (
-    <div className="items-left bg-orange-500">
-      <div className="ml-auto p-2">{itemList}</div>
-    </div>
+    <>{itemList}</>
   );
 }
 
-export default NavbarItems;
+export default NavItems;

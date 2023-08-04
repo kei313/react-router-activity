@@ -1,17 +1,8 @@
 import "../assets/styles/index.css";
 import { Navbar } from "flowbite-react";
 import Logo from "./logo.jsx";
-const NavbarItems = ["Phone Case", "Lato Lato", "Dress", "Shoes", "Tops"];
-
-let itemList = [];
-for (let i of NavbarItems) {
-  itemList.push(
-    <a href="#" className="text-black hover:text-white ml-4">
-      {i}
-    </a>
-  );
-}
-
+import CategoryItems from "./CategoryItems";
+import NavbarItems from "./NavbarItems";
 function Header() {
   return (
     <header>
@@ -59,37 +50,12 @@ function Header() {
             </div>
           </form>
         </Navbar.Brand>
-        <div className="flex items-center ml-96 rounded-lg p-2">
-          <p className="leading-none pr-2">
-            <button class="text-white bg-gradient-to-br from-orange-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-              <span className="navtitle-md font-semibold text-black">
-                Notifications
-              </span>
-            </button>
-          </p>
-          <p className="leading-none pr-2">
-            <button class="text-white bg-gradient-to-br from-orange-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-              <span className="navtitle-md font-semibold text-black">Cart</span>
-            </button>
-          </p>
-          <p className="leading-none pr-2">
-            <button class="text-white bg-gradient-to-br from-orange-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-              <span className="navtitle-md font-semibold text-black">
-                Sign up
-              </span>
-            </button>
-          </p>
-          <p className="leading-none pr-2">
-            <button class="text-white bg-gradient-to-br  from-orange-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
-              <span className="navtitle-md font-semibold text-black">
-                Login
-              </span>
-            </button>
-          </p>
+        <div className="flex ml-auto">
+          <NavbarItems />
         </div>
       </Navbar>
       <div className="items-left bg-orange-500">
-        <div className="ml-auto p-2">{itemList}</div>
+        <div className="ml-auto p-2">{<CategoryItems />}</div>
       </div>
     </header>
   );
